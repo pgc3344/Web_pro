@@ -1,8 +1,8 @@
 // 2-5 자료형 과제: 문자열 따옴표
-let name = "Ilya";
+let player = "Gichan";
 console.log(`hello ${1}`);      // hello 1
-console.log(`hello ${"name"}`); // hello name
-console.log(`hello ${name}`);   // hello Ilya
+console.log(`hello ${"player"}`); // hello name
+console.log(`hello ${player}`);   // hello Gichan
 
 // typeof로 자료형 확인
 console.log(typeof 0);         // number

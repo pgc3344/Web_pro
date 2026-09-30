@@ -1,41 +1,41 @@
 // 2-15 함수: 지역 변수, 외부 변수, 매개변수 기본값, return
-let userName = 'John';
+let nickname = 'Gichan';
 
-function showMessage() {
-    let message = 'Hello, ' + userName; // 외부 변수 접근
-    console.log(message);
+function printGreeting() {
+    let greeting = 'Hello, ' + nickname; // 외부 변수 접근
+    console.log(greeting);
 }
-showMessage(); // Hello, John
+printGreeting(); // Hello, Gichan
 
 function changeName() {
-    userName = 'Bob'; // 외부 변수 수정
+    nickname = 'Minsu'; // 외부 변수 수정
 }
 changeName();
-console.log(userName); // Bob
+console.log(nickname); // Minsu
 
 function shadow() {
-    let userName = 'Ann'; // 외부 변수를 가림
-    console.log(userName); // Ann
+    let nickname = 'Jiwoo'; // 외부 변수를 가림
+    console.log(nickname); // Jiwoo
 }
 shadow();
-console.log(userName); // Bob
+console.log(nickname); // Minsu
 
 // 매개변수 기본값
-function greet(from, text = "텍스트가 없습니다") {
-    console.log(from + ": " + text);
+function sendNote(sender, note = "내용 없음") {
+    console.log(sender + ": " + note);
 }
-greet("Ann"); // Ann: 텍스트가 없습니다
+sendNote("Jiwoo"); // Jiwoo: 내용 없음
 
 // return으로 값 반환 / 즉시 종료
-function checkAge(age) {
-    return age >= 18;
+function isAdult(userAge) {
+    return userAge >= 19;
 }
-function showMovie(age) {
-    if (!checkAge(age)) {
-        console.log("접속 차단");
+function enterCinema(userAge) {
+    if (!isAdult(userAge)) {
+        console.log("입장 불가");
         return;
     }
-    console.log("영화 상영");
+    console.log("입장 완료");
 }
-showMovie(20); // 영화 상영
-showMovie(15); // 접속 차단
+enterCinema(25); // 입장 완료
+enterCinema(17); // 입장 불가

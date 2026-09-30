@@ -8,11 +8,11 @@ function pow(x, n) {
     return result;
 }
 
-let x = Number(process.argv[2] ?? 3);
-let n = Number(process.argv[3] ?? 3);
+let base = Number(process.argv[2] ?? 3);
+let exp = Number(process.argv[3] ?? 3);
 
-if (n < 1 || !Number.isInteger(n)) {
-    console.log(`${n}은(는) 지원되지 않습니다. 자연수를 입력해 주세요.`);
+if (exp < 1 || !Number.isInteger(exp)) {
+    console.log(`${exp}은(는) 지원되지 않습니다. 자연수를 입력해 주세요.`);
 } else {
-    console.log(`pow(${x}, ${n}) = ${pow(x, n)}`);
+    console.log(`pow(${base}, ${exp}) = ${pow(base, exp)}`);
 }
