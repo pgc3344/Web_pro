@@ -9,3 +9,4 @@ Node.js로 실행: `node ex1/1_variables.js`
 | `ex3/` | 3-1 홀수/짝수 판별, 3-2 윤년 판별 |
 | `ex4/` | 4-1 switch→if, 4-2 if→switch, 4-3 for→while, 4-4 구구단, 4-5 배수 판별, 4-6 소수 찾기 |
 | `ex5/` | 5-1 min·pow 함수, 5-2 pow 입력값 검사, 5-3 지역/외부 변수·return, 5-4 try..catch |
+| `hello/` | Hello World 예제 (hello.html, hello.js) |
