@@ -8,7 +8,7 @@ switch (a) {
   case 1:
     console.log(1);
     break;
-  case 2:
+  case 2: // 2, 3 같은 처리
   case 3:
     console.log("2,3");
     break;

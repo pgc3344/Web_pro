@@ -1,4 +1,4 @@
-// Math 객체 예제
+// Math 객체 속성과 메서드
 console.log("Math.LOG2E: " + Math.LOG2E);
 console.log("Math.LOG10E: " + Math.LOG10E);
 console.log("Math.SQRT2: " + Math.SQRT2);

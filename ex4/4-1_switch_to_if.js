@@ -3,7 +3,7 @@ const browser = "Chrome";
 
 if (browser === "Edge") {
   console.log("Edge를 사용하고 계시네요!");
-} else if (
+} else if ( // 여러 case는 ||로 묶음
   browser === "Chrome" ||
   browser === "Firefox" ||
   browser === "Safari" ||

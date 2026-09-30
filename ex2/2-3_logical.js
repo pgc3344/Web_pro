@@ -1,5 +1,5 @@
-// 문제 2-3. 논리연산 연습 (주석: 예측 결과)
-console.log(true || false && false);    // true  - &&가 먼저 계산됨
+// 문제 2-3. 논리연산 (주석은 예상 결과)
+console.log(true || false && false);    // true, &&가 먼저 계산됨
 console.log((true || false) && false);  // false
 console.log(!(true || false) && true);  // false
 console.log("" || "JavaScript");        // "JavaScript"
@@ -34,5 +34,5 @@ console.log("" || "JavaScript");        // "JavaScript"
 }
 {
   const x = 10;
-  console.log(x > 5 && 0 || x < 5);     // false - (true && 0) || false
+  console.log(x > 5 && 0 || x < 5);     // (true && 0) || false → false
 }

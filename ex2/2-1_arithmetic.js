@@ -4,7 +4,7 @@ const readline = require("readline/promises");
 async function main() {
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-  // x, y를 입력받아 계산
+  // 입력값은 문자열이므로 Number로 변환
   const x = Number(await rl.question("x 값: "));
   const y = Number(await rl.question("y 값: "));
   console.log(`x + y = ${x + y}`);
@@ -14,11 +14,10 @@ async function main() {
   console.log(`x % y = ${x % y}`);
   console.log(`x ** y = ${x ** y}`);
 
-  // 원의 넓이
   const r = Number(await rl.question("원의 반지름: "));
   console.log(`반지름 ${r}인 원의 넓이: ${(Math.PI * r ** 2).toFixed(2)}`);
 
-  // 2차방정식 ax^2 + bx + c = 0 의 두 근
+  // 근의 공식 (d: 판별식)
   const a = Number(await rl.question("a 계수: "));
   const b = Number(await rl.question("b 계수: "));
   const c = Number(await rl.question("c 계수: "));

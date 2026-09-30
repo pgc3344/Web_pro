@@ -6,6 +6,7 @@ async function main() {
   const n = parseInt(await rl.question("정수 n: "), 10);
   rl.close();
 
+  // 2로 나눈 나머지로 판단
   if (n % 2 === 0) {
     console.log(`${n}은 짝수입니다`);
   } else {

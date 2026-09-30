@@ -2,5 +2,5 @@
 let i = 0;
 while (i < 3) {
   console.log(`number ${i}`);
-  i++;
+  i++; // 증가 안 하면 무한루프
 }

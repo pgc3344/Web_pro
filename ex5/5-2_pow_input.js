@@ -1,5 +1,5 @@
-// 2-15 함수 과제: pow(x, n) - 입력값 검사 포함
-// 실행: node ex5/5-2_pow_input.js 3 2
+// pow 과제 - n은 자연수만 허용
+// node에는 prompt가 없어서 인자로 입력: node ex5/5-2_pow_input.js 3 2
 function pow(x, n) {
     let result = x;
     for (let i = 1; i < n; i++) {

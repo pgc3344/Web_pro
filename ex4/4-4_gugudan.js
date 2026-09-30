@@ -19,7 +19,7 @@ async function main() {
     console.log("1에서 9 사이의 숫자를 입력하세요");
   }
 
-  // 추가: 1단부터 9단까지 모두 출력
+  // 전체 단 출력
   console.log("\n=== 전체 구구단 ===");
   for (let d = 1; d <= 9; d++) {
     printDan(d);
