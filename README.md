@@ -17,5 +17,6 @@ Node.js로 실행: `node ex1/1_variables.js`
 |---|---|
 | `excode/` | 연습문제 1~6 풀이 (`p1-1.js` ~ `p6-4.js`, 19개) |
 | `excode.zip` | `excode/` 압축본 (LMS 제출용) |
+| `excode_20261008.zip` | 같은 압축본, 2026-10-08 제출본 |
 
 실행: `node excode/p4-4.js 7` — 입력이 필요한 문제는 명령줄 인수로 받고, 없으면 기본값 사용
