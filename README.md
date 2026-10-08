@@ -57,4 +57,3 @@ node excode/p4-4.js 7
 | 파일 | 설명 |
 |---|---|
 | `excode.zip` | `excode/` 압축본 (LMS 제출용) |
-| `excode_20261008.zip` | 같은 압축본, 2026-10-08 제출본 |
