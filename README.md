@@ -4,7 +4,7 @@
 
 실행 환경은 Node.js야. 예: `node ex1/1_variables.js`, `node excode/p4-4.js 7`
 
-## 수업 시간 연습 (ex1 ~ ex7)
+## 수업 시간 연습 (ex1 ~ ex9)
 
 | 폴더 | 내용 |
 |---|---|
@@ -15,6 +15,8 @@
 | `ex5/` | 5-1 min·pow 함수, 5-2 pow 입력값 검사, 5-3 지역/외부 변수·return, 5-4 try..catch |
 | `ex6/` | 6-1 객체 프로퍼티 추가·수정·삭제, 6-2 for…in 합계, 6-3 객체 메서드, 6-4 생성자 함수 |
 | `ex7/` | 7-1 숫자(toString·parseInt·isNaN), 7-2 문자열(slice), 7-3 배열 연산, 7-4 값 제거, 7-5 스택으로 뒤집기 |
+| `ex8/` | Node.js 1 — 런타임·setTimeout, 콜스택(hello1·hello2), 콜백 함수, 비동기 I/O, 이벤트루프 실행 순서, fs.readFile |
+| `ex9/` | Node.js 2 — 동기/비동기 공항 출국, 콜백 스케쥴링, 놀이공원 연습(콜백·Promise·async), Promise 기본·체이닝, async/await, 연습문제 1 햄버거 |
 | `hello/` | Hello World 예제 (hello.html, hello.js) |
 
 ## 연습문제 풀이 (`excode/`)
@@ -59,6 +61,15 @@ node excode/p4-2.js 3
 node excode/p4-4.js 7
 node excode/p7-1.js 2025 "25misterm10.04 Mon"
 node excode/p7-5.js javascript
+```
+
+### Node.js 예제 (ex8·ex9) 실행 예시
+
+```
+node ex8/8-8_event_loop_order.js
+node ex9/9-4_amusement_park.js promise   # callback | promise | async
+node ex9/9-6_promise_worker.js true      # worker 값
+node ex9/9-11_burger.js false            # shopOpen 값
 ```
 
 ### 압축파일
