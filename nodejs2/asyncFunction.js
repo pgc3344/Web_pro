@@ -1,5 +1,5 @@
-// 9-8. 자바스크립트 Async 함수 - 항상 프로미스를 반환
-// 실행: node ex9/9-8_async_function.js
+// 자바스크립트 Async 함수 - 항상 프로미스를 반환
+// 실행: node nodejs2/asyncFunction.js
 
 async function f1() {
     return Promise.resolve(1);

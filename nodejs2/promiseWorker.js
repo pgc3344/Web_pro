@@ -1,5 +1,5 @@
-// 9-6. promise 사용예 - worker 값에 따라 resolve / reject
-// 실행: node ex9/9-6_promise_worker.js [true|false]  (기본값: false)
+// promise 사용예 - worker 값에 따라 resolve / reject
+// 실행: node nodejs2/promiseWorker.js [true|false]  (기본값: false)
 
 let worker = process.argv[2] === 'true';
 

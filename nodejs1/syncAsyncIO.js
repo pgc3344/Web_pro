@@ -1,5 +1,5 @@
-// 8-7. 비동기작업 실행 - 동기 I/O vs 비동기 I/O
-// 실행: node ex8/8-7_sync_async_io.js
+// 비동기작업 실행 - 동기 I/O vs 비동기 I/O
+// 실행: node nodejs1/syncAsyncIO.js
 
 // 동기 I/O - 순서대로 실행
 console.log("First Job");

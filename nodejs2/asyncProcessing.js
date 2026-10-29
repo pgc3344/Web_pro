@@ -1,6 +1,6 @@
-// 9-2. Asynchronous(비동기식) 처리 - 공항 출국 절차 (asyncProcessing.js)
+// Asynchronous(비동기식) 처리 - 공항 출국 절차 (asyncProcessing.js)
 // 대기 시간이 짧은 순서로 출력됨: 출국심사 → 탑승 → 보안검색 → 발권 (순서 보장 X)
-// 실행: node ex9/9-2_asyncProcessing.js
+// 실행: node nodejs2/asyncProcessing.js
 
 checkIn();
 security();

@@ -1,5 +1,5 @@
-// 8-6. setTimeout() 전역함수 - let timerId = setTimeout(func, [delay], [arg1], ...)
-// 실행: node ex8/8-6_settimeout.js
+// setTimeout() 전역함수 - let timerId = setTimeout(func, [delay], [arg1], ...)
+// 실행: node nodejs1/setTimeout.js
 
 setTimeout(() => {
     console.log("1초 지연.");

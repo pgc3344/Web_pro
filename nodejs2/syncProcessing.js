@@ -1,6 +1,6 @@
-// 9-1. Synchronous(동기식) 처리 - 공항 출국 절차 (syncProcessing.js)
+// Synchronous(동기식) 처리 - 공항 출국 절차 (syncProcessing.js)
 // delay_ms는 while 루프로 CPU를 붙잡아 다음 작업을 막음 → 4+2+1+3 = 10초
-// 실행: node ex9/9-1_syncProcessing.js
+// 실행: node nodejs2/syncProcessing.js
 
 checkIn();
 security();

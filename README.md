@@ -4,7 +4,7 @@
 
 실행 환경은 Node.js야. 예: `node ex1/1_variables.js`, `node excode/p4-4.js 7`
 
-## 수업 시간 연습 (ex1 ~ ex9)
+## 수업 시간 연습 (ex1 ~ ex7)
 
 | 폴더 | 내용 |
 |---|---|
@@ -15,9 +15,48 @@
 | `ex5/` | 5-1 min·pow 함수, 5-2 pow 입력값 검사, 5-3 지역/외부 변수·return, 5-4 try..catch |
 | `ex6/` | 6-1 객체 프로퍼티 추가·수정·삭제, 6-2 for…in 합계, 6-3 객체 메서드, 6-4 생성자 함수 |
 | `ex7/` | 7-1 숫자(toString·parseInt·isNaN), 7-2 문자열(slice), 7-3 배열 연산, 7-4 값 제거, 7-5 스택으로 뒤집기 |
-| `ex8/` | Node.js 1 — 런타임·setTimeout, 콜스택(hello1·hello2), 콜백 함수, 비동기 I/O, 이벤트루프 실행 순서, fs.readFile |
-| `ex9/` | Node.js 2 — 동기/비동기 공항 출국, 콜백 스케쥴링, 놀이공원 연습(콜백·Promise·async), Promise 기본·체이닝, async/await, 연습문제 1 햄버거 |
 | `hello/` | Hello World 예제 (hello.html, hello.js) |
+
+## Node.js 수업 예제 (`nodejs1/`, `nodejs2/`)
+
+교재 NodeJS-1·NodeJS-2에 맞춰 폴더를 나눴어. 슬라이드에 파일 이름이 나온 예제는 그 이름을 그대로 썼어.
+
+### `nodejs1/` — Node.js · 자바스크립트 비동기 I/O
+
+| 파일 | 내용 |
+|---|---|
+| `hello.js` | 런타임 구성 — `hello()` 동기 호출과 `setTimeout` 비동기 호출 |
+| `hello1.js` | 콜스택 동작 (greet → welcome) |
+| `hello2.js` | 콜스택 동작 (logger → welcome, `console.trace`로 스택 출력) |
+| `callback.js` | 콜백 함수 (greet + sayGoodbye) |
+| `multiCallback.js` | 여러 개의 콜백 (함수표현식·화살표 함수) |
+| `setTimeout.js` | `setTimeout(func, delay, arg1…)`, `clearTimeout` |
+| `syncAsyncIO.js` | 동기 I/O vs 비동기 I/O |
+| `eventLoop.js` | 이벤트루프 실행 순서 (동기 → 마이크로태스크큐 → 콜백큐) |
+| `readFile.js` | `fs.readFile('test.txt', callback)` 비동기 파일 읽기 |
+
+### `nodejs2/` — 비동기작업 스케쥴링
+
+| 파일 | 내용 |
+|---|---|
+| `syncProcessing.js` | 동기식 처리 — 공항 출국 절차 |
+| `asyncProcessing.js` | 비동기식 처리 — 순서가 보장되지 않음 |
+| `callbackSchedule.js` | 콜백을 이용한 스케쥴링 |
+| `amusementPark.js` | **비동기 스케쥴링 연습** — 바이킹 → 티익스프레스 → 허리케인 (콜백·Promise·async/await) |
+| `promise.js` | promise 기본 구조 (resolve/reject, then/catch) |
+| `promiseWorker.js` | promise 사용예 (worker) |
+| `promiseChaining.js` | 프로미스 체이닝을 이용한 스케쥴링 |
+| `asyncFunction.js` | async 함수는 항상 프로미스를 반환 |
+| `await.js` | await, reject는 try..catch로 처리 |
+| `asyncAwait.js` | async/await를 이용한 스케쥴링 |
+| `burger.js` | **연습문제 1** — getBurger를 Promise·async/await로 구현 |
+
+```
+node nodejs1/eventLoop.js
+node nodejs2/amusementPark.js promise   # callback | promise | async
+node nodejs2/promiseWorker.js true      # worker 값
+node nodejs2/burger.js false            # shopOpen 값
+```
 
 ## 연습문제 풀이 (`excode/`)
 
@@ -61,15 +100,6 @@ node excode/p4-2.js 3
 node excode/p4-4.js 7
 node excode/p7-1.js 2025 "25misterm10.04 Mon"
 node excode/p7-5.js javascript
-```
-
-### Node.js 예제 (ex8·ex9) 실행 예시
-
-```
-node ex8/8-8_event_loop_order.js
-node ex9/9-4_amusement_park.js promise   # callback | promise | async
-node ex9/9-6_promise_worker.js true      # worker 값
-node ex9/9-11_burger.js false            # shopOpen 값
 ```
 
 ### 압축파일

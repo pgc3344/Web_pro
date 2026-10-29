@@ -1,5 +1,5 @@
-// 9-11. 연습문제 1 - getBurger 비동기 코드를 1) Promise 2) async/await로 구현
-// 실행: node ex9/9-11_burger.js [true|false]  (shopOpen, 기본값: true)
+// 연습문제 1 - getBurger 비동기 코드를 1) Promise 2) async/await로 구현
+// 실행: node nodejs2/burger.js [true|false]  (shopOpen, 기본값: true)
 
 let shopOpen = process.argv[2] !== 'false';
 

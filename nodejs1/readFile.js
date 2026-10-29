@@ -1,5 +1,5 @@
-// 8-9. 이벤트루프 - fs.readFile('test.txt', callback) 비동기 파일 읽기
-// 실행: node ex8/8-9_readfile.js
+// 이벤트루프 - fs.readFile('test.txt', callback) 비동기 파일 읽기
+// 실행: node nodejs1/readFile.js
 
 const fs = require('fs');
 const path = require('path');

@@ -1,6 +1,6 @@
-// 9-3. 콜백을 이용한 스케쥴링 (callbackSchedule.js)
+// 콜백을 이용한 스케쥴링 (callbackSchedule.js)
 // 비동기작업 콜백함수에서 다음 비동기작업 호출 → 순서 보장
-// 실행: node ex9/9-3_callbackSchedule.js
+// 실행: node nodejs2/callbackSchedule.js
 
 airportProcess()
 function airportProcess() {

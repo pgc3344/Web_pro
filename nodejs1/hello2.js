@@ -1,6 +1,6 @@
-// 8-3. 콜스택 동작 (hello2.js)
+// 콜스택 동작 (hello2.js)
 // 콜스택: logger → welcome → console.log 순으로 쌓였다가 거꾸로 빠짐
-// 실행: node ex8/8-3_callstack_hello2.js
+// 실행: node nodejs1/hello2.js
 
 function logger() {
     welcome();

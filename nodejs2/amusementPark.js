@@ -1,7 +1,7 @@
-// 9-4. 비동기 스케쥴링 연습
+// 비동기 스케쥴링 연습
 // 바이킹(5초) → 티익스프레스(7초) → 허리케인(3초) 순서로 비동기 실행
 // 콜백 / 프로미스 / async·await 세 가지 방식으로 구현
-// 실행: node ex9/9-4_amusement_park.js [callback|promise|async]  (기본값: callback)
+// 실행: node nodejs2/amusementPark.js [callback|promise|async]  (기본값: callback)
 
 // 1) 콜백 방식 - 각 함수가 끝나면 다음 작업(callback)을 호출
 function viking(callback) {

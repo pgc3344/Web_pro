@@ -1,5 +1,5 @@
-// 8-8. 이벤트루프 - 콜스택 → 마이크로태스크큐 → 콜백(태스크)큐 순서
-// 실행: node ex8/8-8_event_loop_order.js
+// 이벤트루프 - 콜스택 → 마이크로태스크큐 → 콜백(태스크)큐 순서
+// 실행: node nodejs1/eventLoop.js
 
 console.log("1. 동기 코드 시작");
 

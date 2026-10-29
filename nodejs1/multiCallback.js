@@ -1,5 +1,5 @@
-// 8-5. 여러 개의 콜백 - 함수표현식과 화살표 함수를 콜백으로 전달
-// 실행: node ex8/8-5_multi_callback.js
+// 여러 개의 콜백 - 함수표현식과 화살표 함수를 콜백으로 전달
+// 실행: node nodejs1/multiCallback.js
 
 function test(text, call1, call2) {
     let x = y = 2;

@@ -1,5 +1,5 @@
-// 8-1. Node.js 런타임 구성 - 동기 호출과 setTimeout 비동기 호출
-// 실행: node ex8/8-1_runtime_hello.js
+// Node.js 런타임 구성 - 동기 호출과 setTimeout 비동기 호출
+// 실행: node nodejs1/hello.js
 
 function hello() {
     console.log("Hello");
