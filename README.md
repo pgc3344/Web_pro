@@ -17,9 +17,9 @@
 | `ex7/` | 7-1 숫자(toString·parseInt·isNaN), 7-2 문자열(slice), 7-3 배열 연산, 7-4 값 제거, 7-5 스택으로 뒤집기 |
 | `hello/` | Hello World 예제 (hello.html, hello.js) |
 
-## Node.js 수업 예제 (`nodejs1/`, `nodejs2/`)
+## Node.js 수업 예제 (`nodejs1/`, `nodejs2/`, `nodejs3/`)
 
-교재 NodeJS-1·NodeJS-2에 맞춰 폴더를 나눴어. 슬라이드에 파일 이름이 나온 예제는 그 이름을 그대로 썼어.
+교재 NodeJS-1·NodeJS-2·NodeJS-3에 맞춰 폴더를 나눴어. 슬라이드에 파일 이름이 나온 예제는 그 이름을 그대로 썼어.
 
 ### `nodejs1/` — Node.js · 자바스크립트 비동기 I/O
 
@@ -51,11 +51,21 @@
 | `asyncAwait.js` | async/await를 이용한 스케쥴링 |
 | `burger.js` | **연습문제 1** — getBurger를 Promise·async/await로 구현 |
 
+### `nodejs3/` — 모듈 (fs)
+
+| 파일 | 내용 |
+|---|---|
+| `copyFile.js` | **연습문제: 파일 액세스 1** — `fs.readFile()`·`fs.writeFile()`로 파일 복사 |
+| `copyFile2.js` | **연습문제: 파일 액세스 2** — `str.split()`으로 줄마다 줄 번호를 붙여 복사 |
+| `copyFile3.js` | **연습문제: 파일 액세스 3** — `fs.copyFile()`로 파일 복사 |
+| `test1.txt` | 복사 테스트용 원본 파일 |
+
 ```
 node nodejs1/eventLoop.js
 node nodejs2/amusementPark.js promise   # callback | promise | async
 node nodejs2/promiseWorker.js true      # worker 값
 node nodejs2/burger.js false            # shopOpen 값
+cd nodejs3 && node copyFile.js test1.txt test2.txt   # copyFile2.js · copyFile3.js 도 같은 방식
 ```
 
 ## 연습문제 풀이 (`excode/`)

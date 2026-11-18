@@ -1,0 +1,5 @@
+try {
+  data = fs.readFileSync();
+} catch (err) {
+  console.error(err);
+}
