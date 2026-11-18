@@ -58,6 +58,8 @@
 | `copyFile.js` | **연습문제: 파일 액세스 1** — `fs.readFile()`·`fs.writeFile()`로 파일 복사 |
 | `copyFile2.js` | **연습문제: 파일 액세스 2** — `str.split()`으로 줄마다 줄 번호를 붙여 복사 |
 | `copyFile3.js` | **연습문제: 파일 액세스 3** — `fs.copyFile()`로 파일 복사 |
+| `lineNumber.js` | 수업 풀이 — `readFileSync`·`writeFileSync`로 `test.txt`에 줄 번호를 붙여 `test.sav`로 저장 |
+| `test.txt` | `lineNumber.js` 입력 파일 |
 | `test1.txt` | 복사 테스트용 원본 파일 |
 
 ```
