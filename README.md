@@ -97,6 +97,21 @@ node nodejs3/httpApp2/main.js   # 연습2, 브라우저: http://127.0.0.1:8282/ 
 node nodejs4/server.js      # 브라우저: http://127.0.0.1:8282/
 ```
 
+## 실습검사 — NodeJS-3 연습1·2 로그인 서버 (`httpApp/`)
+
+연습1(POST 로그인)과 연습2(GET 로그인)만 하는 서버. 포트 8282.
+
+| 파일 | 내용 |
+|---|---|
+| `main.js` | 서버 — `/`·`/index.html`·`/login.html` 라우팅, `/login`을 GET(query)·POST(body) 모두 처리 |
+| `index.html` | 메인 페이지 (Hello World, 로그인 페이지 링크) |
+| `login.html` | **연습2** — `method="GET"` 로그인 폼 |
+| `loginPost.html` | **연습1** — `method="POST"` 로그인 폼 |
+
+```
+node httpApp/main.js   # 브라우저: http://127.0.0.1:8282/
+```
+
 ## 연습문제 풀이 (`excode/`)
 
 과제1(1~6) 제출일: 2026-10-08 · 7 추가: 2026-10-18
