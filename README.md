@@ -13,7 +13,7 @@
 | `ex3/` | 3-1 홀수/짝수 판별, 3-2 윤년 판별 |
 | `ex4/` | 4-1 switch→if, 4-2 if→switch, 4-3 for→while, 4-4 구구단, 4-5 배수 판별, 4-6 소수 찾기 |
 | `ex5/` | 5-1 min·pow 함수, 5-2 pow 입력값 검사, 5-3 지역/외부 변수·return, 5-4 try..catch |
-| `ex6/` | 6-1 객체 프로퍼티 추가·수정·삭제, 6-2 for…in 합계, 6-3 객체 메서드, 6-4 생성자 함수 |
+| `ex6/` | 6-1 객체 프로퍼티 추가·수정·삭제, 6-2 for…in 합계, 6-3 객체 메서드, 6-4 생성자 함수, 6-5 생성자 함수 2 (Account) |
 | `ex7/` | 7-1 숫자(toString·parseInt·isNaN), 7-2 문자열(slice), 7-3 배열 연산, 7-4 값 제거, 7-5 스택으로 뒤집기 |
 | `hello/` | Hello World 예제 (hello.html, hello.js) |
 
@@ -122,6 +122,7 @@ node nodejs4/server.js      # 브라우저: http://127.0.0.1:8282/
 | `p6-2.js` | 6-2. for…in으로 월급 합계 |
 | `p6-3.js` | 6-3. calculator 객체 메서드 |
 | `p6-4.js` | 6-4. Calculator 생성자 함수 |
+| `p6-5.js` | 6-5. Account 생성자 함수 (deposit·withdraw·getBalance) |
 | `p7-1.js` | 7-1. 숫자 (자릿수 합, 문자열 속 숫자 합, 2진수→16진수) |
 | `p7-2.js` | 7-2. 문자열 (첫 글자 대문자, 가운데 글자 공백) |
 | `p7-3.js` | 7-3. 배열 연산 (push·shift·unshift·pop) |
