@@ -60,7 +60,31 @@
 | `copyFile3.js` | **연습문제: 파일 액세스 3** — `fs.copyFile()`로 파일 복사 |
 | `lineNumber.js` | 수업 풀이 — `readFileSync`·`writeFileSync`로 `test.txt`에 줄 번호를 붙여 `test.sav`로 저장 |
 | `test.txt` | `lineNumber.js` 입력 파일 |
+| `urlParse.js` | **URL 파싱 테스트 1** — 브라우저가 보낸 URL(`req.url`)을 그대로 화면에 표시 (포트 8282) |
+| `urlQuery.js` | **URL 파싱 테스트 2** — `url.parse(req.url, true).query`로 쿼리를 분석해 `id = …` 형태로 응답 (포트 8282) |
 | `test1.txt` | 복사 테스트용 원본 파일 |
+| `circle.js` · `moduleTest2.js` | **모듈 export/require 연습** — `PI`, `setRadius()`, `getArea()`를 내보내는 circle 모듈 |
+| `eventEmitterTest1.js` | 이벤트 트리거/처리 예 + **연습**: `'data'` 이벤트(문자열·정수)와 리스너 추가 |
+| `eventEmitterTest2.js` | EventEmitter를 이용한 비동기작업 스케쥴링 — 공항 프로세스 |
+| `amusementParkEvent.js` | **연습**: 이벤트 객체를 이용한 스케쥴링을 놀이동산 문제에 적용 |
+| `httpApp1/` | **연습1** — `index.html`·`login.html` 라우팅, 로그인 폼을 POST로 처리 (`main.js`, 포트 8282) |
+| `httpApp2/` | **연습2** — `login.html`의 요청을 GET으로 처리 (`url.parse(req.url, true).query`, 포트 8282) |
+
+### `nodejs4/` — 스트림 · 파일 서비스 · 스트리밍 서비스
+
+| 파일 | 내용 |
+|---|---|
+| `makeLargeFile.js` | 실습용 대용량 파일 생성 — `file/largefile.txt`(약 6MB), `file/largerfile.txt`(약 60MB) |
+| `readStream.js` | 스트림 읽기 예 — `createReadStream()`, `highWaterMark`, `data`·`end` 이벤트 |
+| `writeStream.js` | 스트림 쓰기 예 — `createWriteStream()`, `write()`·`end()` |
+| `pipe.js` | read → write 파이프 예 — `readStream.pipe(writeStream)` |
+| `files.html` · `fileServer.js` | 파일 다운로드 서버 — `data`·`end` 이벤트로 응답 스트림에 쓰기 (포트 8282) |
+| `fileServerPipe.js` | 파일 다운로드 서버 — `pipe()`를 이용한 스트림 연결 |
+| `html/movie.html` · `html/kungfupanda4.html` | 무비클립 리스트 · 플레이 페이지 (`<video>` 태그) |
+| `streamServer.js` | 비디오 스트리밍 서버 — `Range` 요청을 `206 Partial Content`로 응답 |
+| `html/index.html` · `html/login.html` · `server.js` | **통합 서버** — NodeJS-4 프로그래밍 연습(파일서비스·스트리밍서비스) + NodeJS-3 연습1·2(로그인 POST·GET) |
+
+`file/`, `video/`는 용량이 커서 저장소에 올리지 않아. `node nodejs4/makeLargeFile.js`로 파일을 만들고, 영상은 `nodejs4/video/kungfupanda4.mp4`에 직접 넣어.
 
 ```
 node nodejs1/eventLoop.js
@@ -68,6 +92,9 @@ node nodejs2/amusementPark.js promise   # callback | promise | async
 node nodejs2/promiseWorker.js true      # worker 값
 node nodejs2/burger.js false            # shopOpen 값
 cd nodejs3 && node copyFile.js test1.txt test2.txt   # copyFile2.js · copyFile3.js 도 같은 방식
+node nodejs3/urlQuery.js   # 브라우저: http://127.0.0.1:8282/path/class.php?id=2018123&class=web&mid=90
+node nodejs3/httpApp2/main.js   # 연습2, 브라우저: http://127.0.0.1:8282/  (httpApp1 도 같은 방식)
+node nodejs4/server.js      # 브라우저: http://127.0.0.1:8282/
 ```
 
 ## 연습문제 풀이 (`excode/`)
